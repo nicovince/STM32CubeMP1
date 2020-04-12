@@ -67,7 +67,15 @@ static void MX_GPIO_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  BSP_LED_Init(LED7);
+  BSP_LED_On(LED7);
+  while(1)
+  {
+    for (int i = 0; i < 2000000; ++i) {
+      __asm__("nop");
+    }
+    BSP_LED_Toggle(LED7);
+  }
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
