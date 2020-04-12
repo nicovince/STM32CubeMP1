@@ -1,0 +1,36 @@
+CSRC += \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Projects/STM32MP157C-DK2/Siema/BLINKY/blinky/SW4STM32/startup_stm32mp15xx.s \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Projects/STM32MP157C-DK2/Siema/BLINKY/blinky/SW4STM32/syscalls.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Projects/STM32MP157C-DK2/Siema/BLINKY/blinky/Src/lock_resource.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Projects/STM32MP157C-DK2/Siema/BLINKY/blinky/Src/main.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Projects/STM32MP157C-DK2/Siema/BLINKY/blinky/Src/stm32mp1xx_hal_msp.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Projects/STM32MP157C-DK2/Siema/BLINKY/blinky/Src/stm32mp1xx_it.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/BSP/STM32MP15xx_DISCO/stm32mp15xx_disco.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Projects/STM32MP157C-DK2/Siema/BLINKY/blinky/Src/system_stm32mp1xx.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_cortex.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_dma.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_dma_ex.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_exti.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_gpio.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_hsem.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_pwr.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_pwr_ex.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_rcc.c \
+/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Src/stm32mp1xx_hal_rcc_ex.c \
+
+CFLAGS +=  -I/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Projects/STM32MP157C-DK2/Siema/BLINKY/blinky/Inc \
+ -I/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/BSP/STM32MP15xx_DISCO \
+ -I/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Inc \
+ -I/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/STM32MP1xx_HAL_Driver/Inc/Legacy \
+ -I/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/CMSIS/Device/ST/STM32MP1xx/Include \
+ -I/home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Drivers/CMSIS/Include \
+ -DCORE_CM4 \
+ -DUSE_HAL_DRIVER \
+ -DSTM32MP157Cxx \
+
+
+LDLIBS += 
+
+LDSCRIPT += /home/nicolas/work/siema/vendors/ST/Distribution-Package/sources/m4projects-stm32mp1/Projects/STM32MP157C-DK2/Siema/BLINKY/blinky/SW4STM32/blinky/stm32mp15xx_m4.ld
+
